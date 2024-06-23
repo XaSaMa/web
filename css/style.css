@@ -701,7 +701,6 @@ Main
 
 .registration-section {
     display: grid;
-    gap: 2fr;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     align-items: center;
@@ -711,7 +710,6 @@ Main
 @media (945px <= width <= 992px) {
     .registration-section {
         display: grid;
-        gap: 2fr;
         grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
         align-items: center;
         padding: 10px 0 60px 0;
@@ -721,7 +719,6 @@ Main
 @media (max-width: 565px) {
     .registration-section {
         display: grid;
-        gap: 2fr;
         grid-auto-flow: dense;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         align-items: center;
@@ -843,7 +840,7 @@ Main
         justify-content: center;
     }
     
-    .pd {
+    category.pd {
         grid-column: 2 / 3;
         grid-row: span 6;
     }
@@ -993,7 +990,7 @@ footer ul li a {
 }
 
 footer ul li::after {
-    padding-right: 0,8rem;
+    padding-right: 0.8rem;
 }
 footer ul li:last-child::after {
     content: "";
@@ -1230,6 +1227,10 @@ Become an instructor
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
+    color: var(--gris-fosc);
+}
+
+.step-content-text p{
     color: var(--gris-fosc);
 }
 
@@ -1789,6 +1790,12 @@ nav a:hover {
 }
 
 .apply-button:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.apply-button-2:hover {
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     color: #ffffff;
